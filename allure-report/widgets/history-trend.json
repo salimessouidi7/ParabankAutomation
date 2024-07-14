@@ -1,0 +1,1 @@
+[{"buildOrder":5,"reportUrl":"http://localhost:8080/job/ParaBank%20Tests/5/allure","reportName":"AllureReport","data":{"failed":0,"broken":2,"skipped":3,"passed":3,"unknown":0,"total":8}},{"buildOrder":4,"reportUrl":"http://localhost:8080/job/ParaBank%20Tests/4/allure","reportName":"AllureReport","data":{"failed":0,"broken":1,"skipped":3,"passed":4,"unknown":0,"total":8}}]

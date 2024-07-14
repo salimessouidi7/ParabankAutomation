@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" verbose="2" preserve-order="true">
+    <listeners>
+        <listener class-name="utils.ExtentTestNGITestListener" />
+    </listeners>
+
+    <test name="User Registration">
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="testcases.UserRegistrationTest">
+                <methods>
+                    <include name="registerTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Log In and Log Out">
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="testcases.UserLoginTest">
+                <methods>
+                    <include name="loginTest"/>
+                </methods>
+            </class>
+            <class name="testcases.LogoutTest">
+                <methods>
+                    <include name="logouTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Open New Account">
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="testcases.UserLoginTest">
+                <methods>
+                    <include name="loginTest"/>
+                </methods>
+            </class>
+            <class name="testcases.OpenNewAccountTest">
+                <methods>
+                    <include name="openAccountTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Account Management">
+        <parameter name="browser" value="edge" />
+        <classes>
+            <class name="testcases.UserLoginTest">
+                <methods>
+                    <include name="loginTest"/>
+                </methods>
+            </class>
+            <class name="testcases.TransferFundsTest">
+                <methods>
+                    <include name="transferFundsTest"/>
+                </methods>
+            </class>
+            <class name="testcases.AccountOverviewTest">
+                <methods>
+                    <include name="extractAccountTableInfoTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
