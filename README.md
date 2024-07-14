@@ -1,1 +1,67 @@
-# ParabankAutomation
+# Parabank Automation
+
+Welcome to the Parabank Automation project! This repository contains automated tests for key functionalities of the Parabank web application using Selenium Java and TestNG.
+
+## Project Overview
+
+This project aims to automate various functionalities of Parabank, a popular open-source e-commerce platform, to ensure robust testing and enhanced user experience.
+
+## Key Features
+
+1. **Handling Dynamic Content**
+    - Overcomes challenges with dynamic web elements and data to ensure smooth test execution.
+
+2. **Data-Driven Testing**
+    - Implements data-driven techniques to parameterize tests, enhancing efficiency and reusability.
+
+3. **Reporting and Logging**
+    - Integrates TestNG for comprehensive reporting, enabling detailed analysis of test results and issue identification.
+
+4. **Cross-Browser Testing**
+    - Ensures compatibility across multiple browsers for comprehensive test coverage.
+
+## Covered Test Cases
+
+- Automate User Registration process
+- Automate successful user login
+- Automate User Log Out functionality
+- Automate Account Opening process
+- Automate Funds Transfer functionality
+- Automate Account Overview page navigation
+
+
+## Getting Started
+
+### Prerequisites
+
+- Java 8 or higher
+- Maven
+- Selenium WebDriver
+- TestNG
+
+### Installation and Running Tests
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/salimessouidi7/ParabankAutomation.git
+    ```
+2. Navigate to the project directory:
+    ```sh
+    cd ParabankAutomation
+    ```
+3. Install dependencies:
+    ```sh
+    mvn install
+    ```
+4. To run the tests, execute the following command:
+    ```sh
+    mvn test
+    ```
+
+### Reporting
+
+The Extent Reports generated from the Selenium TestNG tests are located under target/extent-report.html.
+
+### Contributing
+
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
