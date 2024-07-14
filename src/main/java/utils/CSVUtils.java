@@ -10,43 +10,42 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CSVUtils {
-	// Chemin d'accès au fichier CSV
+	// Path to the CSV file
 	private static final String CSV_PATH = "/DataRegister.csv";
 
-	// Méthode pour lire les données à partir d'un fichier CSV
+	// Method to read data from a CSV file
 	public static List<String[]> readCSV(String filePath) throws CsvValidationException {
-		// Crée une liste pour stocker les données lues
+		// Create a list to store the read data
 		List<String[]> data = new ArrayList<>();
 		try (
-				// Utilise un CSVReader pour lire le fichier CSV à partir d'un flux d'entrée
+				// Use a CSVReader to read the CSV file from an input stream
 				CSVReader reader = new CSVReader(new InputStreamReader(CSVUtils.class.getResourceAsStream(filePath)))) {
 			String[] line;
-			// Lit chaque ligne du fichier CSV jusqu'à ce qu'il n'y en ait plus
+			// Read each line of the CSV file until there are no more lines
 			while ((line = reader.readNext()) != null) {
-				// Ajoute la ligne lue à la liste de données
+				// Add the read line to the data list
 				data.add(line);
 			}
 		} catch (IOException e) {
-			// Gère les exceptions liées à la lecture du fichier CSV
+			// Handle exceptions related to reading the CSV file
 			e.printStackTrace();
 		}
-		// Retourne les données lues à partir du fichier CSV
+		// Return the data read from the CSV file
 		return data;
 	}
 
-	// Méthode fournissant des données pour les tests depuis le fichier CSV
+	// Method providing data for tests from the CSV file
 	@DataProvider(name = "csvData")
 	public static Object[][] getDataFromCSV() throws CsvValidationException {
-		// Lit les données à partir du fichier CSV
+		// Read the data from the CSV file
 		List<String[]> csvData = readCSV(CSV_PATH);
-		// Crée un tableau d'objets à deux dimensions
-		// pour stocker les données lues
+		// Create a two-dimensional object array to store the read data
 		Object[][] data = new Object[csvData.size()][];
-		// Remplit le tableau avec les données lues
+		// Fill the array with the read data
 		for (int i = 0; i < csvData.size(); i++) {
 			data[i] = csvData.get(i);
 		}
-		// Retourne le tableau de données pour les tests
+		// Return the data array for tests
 		return data;
 	}
 }
