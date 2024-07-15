@@ -52,7 +52,6 @@
 
     <test name="Account Management">
         <parameter name="browser" value="edge" />
-        <!--<parameter name="browser" value="chrome" />-->
         <classes>
             <class name="testcases.UserLoginTest">
                 <methods>
