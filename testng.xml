@@ -5,7 +5,7 @@
         <listener class-name="utils.ExtentTestNGITestListener" />
     </listeners>
 
-    <!--<test name="User Registration">
+    <test name="User Registration">
         <parameter name="browser" value="chrome" />
         <classes>
             <class name="testcases.UserRegistrationTest">
@@ -14,7 +14,7 @@
                 </methods>
             </class>
         </classes>
-    </test>-->
+    </test>
 
     <test name="Log In and Log Out">
         <parameter name="browser" value="chrome" />
