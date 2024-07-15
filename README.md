@@ -4,7 +4,11 @@ Welcome to the Parabank Automation project! This repository contains automated t
 
 ## Project Overview
 
-This project aims to automate various functionalities of Parabank, a popular open-source e-commerce platform, to ensure robust testing and enhanced user experience.
+This project aims to automate various functionalities of Parabank, ParaBank is a demo site used for demonstration of Parasoft software solutions. All materials herein are used solely for simulating a realistic online banking website.
+
+In other words: ParaBank is not a real bank!
+
+Demo https://parabank.parasoft.com/parabank/index.htm
 
 ## Key Features
 
@@ -28,6 +32,32 @@ This project aims to automate various functionalities of Parabank, a popular ope
 - Automate Account Opening process
 - Automate Funds Transfer functionality
 - Automate Account Overview page navigation
+
+## Registration Test Data
+
+This repository includes test data for registration testing using data-driven techniques.
+
+### File Details
+- **File Name**: DataRegister.csv
+- **Purpose**: Contains registration data for automated tests.
+- **Important Note**: Before running the registration test suite, ensure that the username field in `DataRegister.csv` is unique. Update it accordingly to avoid conflicts during test execution.
+
+### Data Format
+Each line in `DataRegister.csv` follows the format:
+Salim, Souidi, Tunisia, Kasserine, Zalfen, 12345, 12345678, 123, test08, 123456
+
+
+### Field Descriptions
+1. First Name
+2. Last Name
+3. Country
+4. City
+5. Address
+6. Zip Code
+7. Phone Number
+8. SSN
+9. Username
+10. Password
 
 
 ## Getting Started
