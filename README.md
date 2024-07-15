@@ -4,7 +4,11 @@ Welcome to the Parabank Automation project! This repository contains automated t
 
 ## Project Overview
 
-This project aims to automate various functionalities of Parabank, a popular open-source e-commerce platform, to ensure robust testing and enhanced user experience.
+This project aims to automate various functionalities of Parabank, ParaBank is a demo site used for demonstration of Parasoft software solutions. All materials herein are used solely for simulating a realistic online banking website.
+
+In other words: ParaBank is not a real bank!
+
+Demo https://parabank.parasoft.com/parabank/index.htm
 
 ## Key Features
 
