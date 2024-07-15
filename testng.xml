@@ -1,9 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite" verbose="2" preserve-order="true">
     <listeners>
         <listener class-name="utils.ExtentTestNGITestListener" />
     </listeners>
+
+    <!-- Define suite level parameters -->
+    <parameter name="dynamicUsername" value="${utils.CSVUtils.getDynamicUsername()}" />
 
     <test name="User Registration">
         <parameter name="browser" value="chrome" />
@@ -26,7 +28,7 @@
             </class>
             <class name="testcases.LogoutTest">
                 <methods>
-                    <include name="logouTest"/>
+                    <include name="logoutTest"/>
                 </methods>
             </class>
         </classes>
@@ -50,6 +52,7 @@
 
     <test name="Account Management">
         <parameter name="browser" value="edge" />
+        <!--<parameter name="browser" value="chrome" />-->
         <classes>
             <class name="testcases.UserLoginTest">
                 <methods>

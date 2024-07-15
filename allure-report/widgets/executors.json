@@ -1,1 +1,1 @@
-[{"name":"Jenkins","type":"jenkins","url":"http://localhost:8080/","buildOrder":5,"buildName":"ParaBank Tests #5","buildUrl":"http://localhost:8080/job/ParaBank%20Tests/5/","reportName":"AllureReport","reportUrl":"http://localhost:8080/job/ParaBank%20Tests/5/allure"}]
+[{"name":"Jenkins","type":"jenkins","url":"http://localhost:8080/","buildOrder":6,"buildName":"ParaBank Tests From Local #6","buildUrl":"http://localhost:8080/job/ParaBank%20Tests%20From%20Local/6/","reportName":"AllureReport","reportUrl":"http://localhost:8080/job/ParaBank%20Tests%20From%20Local/6/allure"}]
