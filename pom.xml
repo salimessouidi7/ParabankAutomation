@@ -59,6 +59,13 @@
             <artifactId>extentreports</artifactId>
             <version>5.1.2</version>
         </dependency>
+             <!-- https://mvnrepository.com/artifact/org.apache.maven.doxia/doxia-sitetools -->
+<dependency>
+    <groupId>org.apache.maven.doxia</groupId>
+    <artifactId>doxia-sitetools</artifactId>
+    <version>2.0.0-M19</version>
+    <type>pom</type>
+</dependency>
 
         <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
         <dependency>
