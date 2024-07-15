@@ -28,7 +28,7 @@ public class BaseTest {
         driver.get("https://parabank.parasoft.com/parabank/index.htm");
     }
 
-    //@AfterTest
+    @AfterTest
     public void tearDown() {
         if (driver != null) {
             driver.quit();
